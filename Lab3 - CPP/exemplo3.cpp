@@ -2,6 +2,8 @@
 positivo e calcule o fatorial desse número. O fatorial de um número n (n!) é definido como 
 o produto de todos os inteiros positivos de 1 até n.*/
 
+// n = 4, n! = 4 * 3 * 2 * 1
+
 #include <iostream>
 
 using namespace std;
@@ -20,7 +22,7 @@ int main() {
     } else {
         // Cálculo do fatorial
         for (int i = 1; i <= num; i++) {
-            fatorial *= i;
+            fatorial *= i; // fatorial = fatorial * i
         }
 
         // Exibição do resultado

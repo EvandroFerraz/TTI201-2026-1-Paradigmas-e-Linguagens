@@ -1,6 +1,6 @@
 /* EXERCÍCIO 2 - Escreva um programa em C++ que solicite ao usuário um número inteiro 
 positivo e verifique se ele é um número primo. Um número é considerado primo se for maior 
-que 1 e divisível apenas por 1 e por ele mesmo.O programa deve exibir uma mensagem 
+que 1 e divisível apenas por 1 e por ele mesmo. O programa deve exibir uma mensagem 
 informando se o número é primo ou não.*/
 
 #include <iostream>
@@ -18,7 +18,10 @@ int main() {
     // Verificação de número primo
     if (num <= 1) {
         ehPrimo = false;
-    } else {
+    } else { // num > 1
+        // num = 4
+        // i = 2; i < 4; i++
+        // if(4 % 2 == 0)
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
                 ehPrimo = false;
